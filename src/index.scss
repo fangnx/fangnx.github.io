@@ -1,0 +1,23 @@
+/**
+* index.scss
+*
+* @author nxxinf
+* @github https://github.com/fangnx
+* @created 2019-08-24 17:03:39
+* @last-modified 2019-09-15 22:50:37
+*/
+
+@import 'styles/variables.scss';
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: $font-default;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
