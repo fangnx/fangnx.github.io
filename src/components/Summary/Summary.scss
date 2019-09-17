@@ -4,7 +4,7 @@
 * @author nxxinf
 * @github https://github.com/fangnx
 * @created 2019-09-15 22:30:41
-* @last-modified 2019-09-17 12:08:53
+* @last-modified 2019-09-17 12:22:24
 */
 
 @import 'src/styles/variables';
@@ -14,7 +14,6 @@
 }
 
 .background {
-  // background: linear-gradient(-135deg, $pink-1, $indigo-5);
   background: $black;
   background-size: cover;
   z-index: 0;
@@ -52,9 +51,10 @@
 }
 
 .roles {
+  font-family: $font-code;
   font-size: 1.4em;
   font-weight: 500;
-  margin-top: 35px;
+  margin-top: 40px;
   line-height: 1.4em;
 }
 
@@ -70,8 +70,8 @@
 }
 
 .links {
-  color: $orange-2;
-  margin-top: 35px;
+  color: $orange-1;
+  margin-top: 40px;
 }
 
 .links > div {
