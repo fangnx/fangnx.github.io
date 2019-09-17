@@ -4,15 +4,56 @@
  * @author nxxinf
  * @github https://github.com/fangnx
  * @created 2019-09-15 22:30:08
- * @last-modified 2019-09-15 23:01:42
+ * @last-modified 2019-09-17 12:05:22
  */
 
 import React from 'react';
+import { Icon } from 'semantic-ui-react';
 import './Summary.scss';
+
+const FACEBOOK_LINK = 'https://www.facebook.com/fangnx';
+const LINKEDIN_LINK = 'https://www.linkedin.com/in/naxin-fang-3821b4137/';
+const GITHUB_LINK = 'https://github.com/fangnx';
 
 const Summary = props => (
   <div className="summary">
-    <span className="fullName">Naxin Fang</span>
+    <div className="content">
+      <div className="audioAnimation">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div className="fullName">
+        <div className="first">NAXIN</div>
+        <div className="last">FANG</div>
+      </div>
+
+      <div className="roles">
+        {['student', 'developer', 'web enthusiast'].map((role, index) => (
+          <>
+            {index !== 0 ? <span className="bullet">•</span> : ''}
+            <span className="role">{role}</span>
+          </>
+        ))}
+      </div>
+
+      <div className="links">
+        <div onClick={() => window.open(FACEBOOK_LINK, '_blank')}>
+          <Icon link name="facebook"></Icon>
+        </div>
+        <div onClick={() => window.open(LINKEDIN_LINK, '_blank')}>
+          <Icon link name="linkedin"></Icon>
+        </div>
+        <div onClick={() => window.open(GITHUB_LINK, '_blank')}>
+          <Icon link name="github"></Icon>
+        </div>
+      </div>
+    </div>
+
+    <div className="background"></div>
   </div>
 );
 
