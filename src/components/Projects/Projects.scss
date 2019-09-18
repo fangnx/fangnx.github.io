@@ -1,0 +1,64 @@
+/**
+* Projects.scss
+*
+* @author nxxinf
+* @github https://github.com/fangnx
+* @created 2019-09-17 12:26:23
+* @last-modified 2019-09-17 23:16:20
+*/
+
+@import 'src/styles/variables';
+
+.projects {
+  background: $white;
+  height: auto;
+}
+
+.projects .content {
+  color: $black;
+  font-family: $font-default;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+
+.projects > :last-child {
+  padding-bottom: 60px;
+}
+
+.projectCard {
+  color: $black;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  width: 500px;
+  text-align: left;
+}
+
+.projectCard > .name {
+  color: $black;
+  display: inline-block;
+  font-family: $font-dynamic;
+  font-size: 2.4em;
+  font-weight: 500;
+  border-bottom: 12px solid $orange-1 !important;
+  margin-bottom: 10px;
+  padding-bottom: 0px !important;
+}
+
+.projectCard i {
+  // color: $red-4;
+  font-size: 1.5em;
+  margin: 0 5px 0 5px;
+}
+
+.projectCard > img {
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.projectCard > .description {
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1.2em;
+}

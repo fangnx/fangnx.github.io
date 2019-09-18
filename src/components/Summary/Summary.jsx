@@ -4,7 +4,7 @@
  * @author nxxinf
  * @github https://github.com/fangnx
  * @created 2019-09-15 22:30:08
- * @last-modified 2019-09-17 12:05:22
+ * @last-modified 2019-09-17 22:04:50
  */
 
 import React from 'react';
@@ -15,7 +15,7 @@ const FACEBOOK_LINK = 'https://www.facebook.com/fangnx';
 const LINKEDIN_LINK = 'https://www.linkedin.com/in/naxin-fang-3821b4137/';
 const GITHUB_LINK = 'https://github.com/fangnx';
 
-const Summary = props => (
+const Summary = () => (
   <div className="summary">
     <div className="content">
       <div className="audioAnimation">
@@ -52,8 +52,6 @@ const Summary = props => (
         </div>
       </div>
     </div>
-
-    <div className="background"></div>
   </div>
 );
 

@@ -1,0 +1,41 @@
+/**
+* Footer.scss
+*
+* @author nxxinf
+* @github https://github.com/fangnx
+* @created 2019-09-17 22:54:17
+* @last-modified 2019-09-17 23:37:44
+*/
+
+@import 'src/styles/variables';
+
+.footer {
+  background: $black;
+  height: 60px;
+  position: relative;
+  width: 100%;
+}
+
+.footer .content {
+  color: $orange-2;
+  font-family: $font-dynamic;
+  font-size: 1.25em;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer .content i {
+  font-size: 0.9em;
+  margin: 0 5px 0 5px;
+}
+
+.whiteIcon {
+  color: $white;
+}
+
+.redIcon {
+  color: $red-4;
+}
