@@ -4,33 +4,49 @@
 * @author nxxinf
 * @github https://github.com/fangnx
 * @created 2019-09-15 22:30:41
-* @last-modified 2019-09-17 22:55:22
+* @last-modified 2019-09-18 01:16:57
 */
 
 @import 'src/styles/variables';
 
 .summary {
+  border-top: 17.5vh $orange-1 solid;
   background: $black;
   height: 100vh;
 }
 
 .summary .content {
-  color: $orange-1;
+  color: $orange-2;
   position: relative;
   text-align: center;
-  top: 5%;
+  top: 17.5vh;
   z-index: 10;
 }
 
+@media (min-width: 768px) {
+  .summary .content {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .summary .content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .fullName {
-  font-family: $font-dynamic;
-  font-size: 4.8em;
+  font-family: $font-fira;
+  font-size: 4em;
   font-weight: 500;
-  margin-top: 120px;
+  margin-top: 7.5vh;
 }
 
 .fullName > .first {
-  color: $red-4;
   display: inline;
   margin-right: 0.25em;
 }
@@ -48,7 +64,6 @@
 }
 
 .roles > .bullet {
-  color: $black;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -69,7 +84,7 @@
 
 .links i {
   font-size: 2.4em;
-  width: 1.4em;
+  width: 1.6em;
 }
 
 .audioAnimation {
@@ -78,7 +93,7 @@
   margin-right: auto;
   margin-bottom: 50px;
   position: relative;
-  width: 70px;
+  width: 64px;
 }
 
 .audioAnimation span {
@@ -86,44 +101,49 @@
   height: 60px;
   top: 0px;
   position: absolute;
-  background: $red-4;
-  -webkit-animation: audio 0.5s infinite ease;
+  background: linear-gradient($red-6, $red-5, $red-4);
+  animation: audio 0.5s infinite ease;
 }
 
 .audioAnimation span:first-child {
   left: 0px;
   -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .audioAnimation span:nth-child(2) {
-  left: 20px;
+  left: 18px;
   -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 .audioAnimation span:nth-child(3) {
-  left: 40px;
+  left: 36px;
   -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 .audioAnimation span:nth-child(4) {
-  left: 60px;
+  left: 54px;
   -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 .audioAnimation span:nth-child(5) {
-  left: 80px;
+  left: 72px;
   -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 @-webkit-keyframes audio {
   0% {
-    height: 24px;
+    height: 25px;
   }
   30% {
     height: 30px;
   }
   60% {
-    height: 48px;
+    height: 50px;
   }
   80% {
-    height: 36px;
+    height: 35px;
   }
   100% {
     height: 20px;
@@ -132,16 +152,16 @@
 
 @keyframes audio {
   0% {
-    height: 24px;
+    height: 25px;
   }
   30% {
     height: 30px;
   }
   60% {
-    height: 48px;
+    height: 50px;
   }
   80% {
-    height: 36px;
+    height: 35px;
   }
   100% {
     height: 20px;

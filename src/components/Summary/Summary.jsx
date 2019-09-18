@@ -4,7 +4,7 @@
  * @author nxxinf
  * @github https://github.com/fangnx
  * @created 2019-09-15 22:30:08
- * @last-modified 2019-09-17 22:04:50
+ * @last-modified 2019-09-18 01:09:26
  */
 
 import React from 'react';
@@ -27,8 +27,8 @@ const Summary = () => (
       </div>
 
       <div className="fullName">
-        <div className="first">NAXIN</div>
-        <div className="last">FANG</div>
+        <div className="first">Naxin</div>
+        <div className="last">Fang</div>
       </div>
 
       <div className="roles">

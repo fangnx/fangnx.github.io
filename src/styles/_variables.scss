@@ -4,13 +4,14 @@
 * @author nxxinf
 * @github https://github.com/fangnx
 * @created 2019-09-15 22:20:48
-* @last-modified 2019-09-17 21:24:55
+* @last-modified 2019-09-18 01:11:39
 */
 
-@import url('https://fonts.googleapis.com/css?family=Muli|Alegreya+Sans:500,500i|Crimson+Pro:500,500i|Roboto+Mono&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Muli|Alegreya+Sans:500,500i|Crimson+Pro:500,500i|Roboto+Mono&display=swap&subset=latin-ext');
 
 $font-default: 'Muli', sans-serif;
 $font-dynamic: 'Alegreya Sans', sans-serif;
+$font-fira: 'Fira Sans', sans-serif;
 $font-serif: 'Crimson Pro', serif;
 $font-code: 'Roboto Mono', sans-serif;
 
@@ -24,12 +25,14 @@ $indigo-3: #7986cb;
 $indigo-2: #9fa8da;
 $indigo-1: #c5cae9;
 
+$orange-6: #fb8c00;
 $orange-5: #ff9800;
 $orange-4: #ffa726;
 $orange-3: #ffb74d;
 $orange-2: #ffcc80;
 $orange-1: #ffe0b2;
 
+$red-6: #e53935;
 $red-5: #f44336;
 $red-4: #ef5350;
 $red-3: #e57373;
