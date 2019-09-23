@@ -4,7 +4,7 @@
  * @author nxxinf
  * @github https://github.com/fangnx
  * @created 2019-09-15 22:30:08
- * @last-modified 2019-09-23 00:03:16
+ * @last-modified 2019-09-23 01:42:00
  */
 
 import React from 'react';
@@ -18,7 +18,7 @@ const FACEBOOK_LINK = 'https://www.facebook.com/fangnx';
 const LINKEDIN_LINK = 'https://www.linkedin.com/in/naxin-fang-3821b4137/';
 const GITHUB_LINK = 'https://github.com/fangnx';
 
-const typed_content = `Hi, this is <h1>${FIRST_NAME} ${LAST_NAME}</h1> 👷.
+const typed_content = `Hi, I'm <h1>${FIRST_NAME} ${LAST_NAME}</h1> 👏.
 <br/> I'm a Computer Science student at <h5>McGill University</h5> in Montreal, Canada.
 <br/><br/> I love coding ⌨️, music 🎧, and photography 📷.`;
 

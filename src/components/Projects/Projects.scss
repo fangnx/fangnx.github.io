@@ -4,14 +4,14 @@
 * @author nxxinf
 * @github https://github.com/fangnx
 * @created 2019-09-17 12:26:23
-* @last-modified 2019-09-23 00:42:33
+* @last-modified 2019-09-23 01:41:15
 */
 
 @import 'src/styles/variables';
 
 .projects {
   border-left: 27.5vw solid transparent;
-  border-image: linear-gradient(to bottom, $yellow, $orange, $red);
+  border-image: linear-gradient(to bottom, $blue-bri, $bluegrey);
   border-image-slice: 1;
   background: $white;
   height: auto;
@@ -21,6 +21,7 @@
   color: $black;
   font-family: $font-default;
   position: relative;
+  padding-top: 5vh;
   z-index: 10;
 }
 
@@ -45,11 +46,21 @@
 }
 
 .projects .title {
-  font-size: 3em;
+  display: inline-block;
+  font-size: 3.6em;
   font-weight: 600;
-  line-height: 3em;
   text-align: left;
+  border-bottom: 12px solid $yellow-bri;
+  margin-bottom: 12px;
+  padding-bottom: 12px !important;
 }
+
+// .projects .title::before {
+//   content: '*';
+//   color: $blue-satu;
+//   font-size: 1em;
+//   margin-right: 5px;
+// }
 
 .projectCard {
   color: $black;

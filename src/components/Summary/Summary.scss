@@ -4,7 +4,7 @@
 * @author nxxinf
 * @github https://github.com/fangnx
 * @created 2019-09-15 22:30:41
-* @last-modified 2019-09-23 00:32:12
+* @last-modified 2019-09-23 01:44:50
 */
 
 @import 'src/styles/variables';
@@ -15,7 +15,6 @@
 }
 
 .summary > .content {
-  background: $yellow-bri;
   color: $black;
   font-family: $font-fira;
   position: relative;
@@ -39,6 +38,8 @@
 }
 
 .topHeader > .content {
+  background: $blue-bri;
+  border-radius: 5px;
   height: 100%;
   position: relative;
 }
@@ -51,7 +52,6 @@
 }
 
 .topHeader .leftMenu a {
-  background: $blue-bri;
   color: $white;
   font-size: 1.8em;
   padding-left: 10px;
@@ -60,12 +60,6 @@
   line-height: 1.4em;
   text-align: center;
   text-decoration: none;
-}
-
-.topHeader .leftMenu a:hover {
-  background: $white;
-  color: $blue;
-  font-weight: 600;
 }
 
 .topHeader .rightMenu {
@@ -80,18 +74,14 @@
 }
 
 .topHeader .rightMenu i {
-  color: $black;
+  color: $white;
   font-size: 2em;
-  margin-left: 5px;
-  margin-right: 10px;
+  margin-left: 10px;
+  margin-left: 10px;
   float: right;
   line-height: 1em;
   text-align: center;
   text-decoration: none;
-}
-
-.topHeader .rightMenu i:hover {
-  color: $blue;
 }
 
 @media (min-width: 768px) {
