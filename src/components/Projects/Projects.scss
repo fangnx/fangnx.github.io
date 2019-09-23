@@ -4,12 +4,15 @@
 * @author nxxinf
 * @github https://github.com/fangnx
 * @created 2019-09-17 12:26:23
-* @last-modified 2019-09-22 20:05:03
+* @last-modified 2019-09-23 00:42:33
 */
 
 @import 'src/styles/variables';
 
 .projects {
+  border-left: 27.5vw solid transparent;
+  border-image: linear-gradient(to bottom, $yellow, $orange, $red);
+  border-image-slice: 1;
   background: $white;
   height: auto;
 }
@@ -45,8 +48,6 @@
   font-size: 3em;
   font-weight: 600;
   line-height: 3em;
-  border-bottom: 12px solid $red-2 !important;
-  padding-bottom: 0px !important;
   text-align: left;
 }
 
@@ -66,13 +67,13 @@
   font-family: $font-dynamic;
   font-size: 2.8em;
   font-weight: 500;
-  border-bottom: 12px solid $orange-1 !important;
-  margin-bottom: 12px;
+  border-bottom: 16px solid $yellow-bri !important;
+  margin-bottom: 16px;
   padding-bottom: 0px !important;
 }
 
 .projectCard i {
-  color: $orange-3 !important;
+  color: $yellow-bri !important;
   font-size: 1.5em;
   margin: 0 5px 0 5px;
 }
@@ -84,6 +85,6 @@
 
 .projectCard > .description {
   font-size: 1.4em;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.4em;
 }

@@ -4,53 +4,57 @@
  * @author nxxinf
  * @github https://github.com/fangnx
  * @created 2019-09-15 22:30:08
- * @last-modified 2019-09-18 01:09:26
+ * @last-modified 2019-09-23 00:03:16
  */
 
 import React from 'react';
+import Typewriter from 'typewriter-effect';
 import { Icon } from 'semantic-ui-react';
 import './Summary.scss';
 
+const FIRST_NAME = 'Naxin';
+const LAST_NAME = 'Fang';
 const FACEBOOK_LINK = 'https://www.facebook.com/fangnx';
 const LINKEDIN_LINK = 'https://www.linkedin.com/in/naxin-fang-3821b4137/';
 const GITHUB_LINK = 'https://github.com/fangnx';
 
+const typed_content = `Hi, this is <h1>${FIRST_NAME} ${LAST_NAME}</h1> 👷.
+<br/> I'm a Computer Science student at <h5>McGill University</h5> in Montreal, Canada.
+<br/><br/> I love coding ⌨️, music 🎧, and photography 📷.`;
+
 const Summary = () => (
   <div className="summary">
+    <div className="topHeader">
+      <div className="content">
+        <div className="leftMenu">
+          <a>Naxin Fang</a>
+        </div>
+
+        <div className="rightMenu">
+          <div onClick={() => window.open(GITHUB_LINK, '_blank')}>
+            <Icon link name="github"></Icon>
+          </div>
+          <div onClick={() => window.open(LINKEDIN_LINK, '_blank')}>
+            <Icon link name="linkedin"></Icon>
+          </div>
+          <div onClick={() => window.open(FACEBOOK_LINK, '_blank')}>
+            <Icon link name="facebook"></Icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div className="content">
-      <div className="audioAnimation">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <div className="fullName">
-        <div className="first">Naxin</div>
-        <div className="last">Fang</div>
-      </div>
-
-      <div className="roles">
-        {['student', 'developer', 'web enthusiast'].map((role, index) => (
-          <>
-            {index !== 0 ? <span className="bullet">•</span> : ''}
-            <span className="role">{role}</span>
-          </>
-        ))}
-      </div>
-
-      <div className="links">
-        <div onClick={() => window.open(FACEBOOK_LINK, '_blank')}>
-          <Icon link name="facebook"></Icon>
-        </div>
-        <div onClick={() => window.open(LINKEDIN_LINK, '_blank')}>
-          <Icon link name="linkedin"></Icon>
-        </div>
-        <div onClick={() => window.open(GITHUB_LINK, '_blank')}>
-          <Icon link name="github"></Icon>
-        </div>
-      </div>
+      <Typewriter
+        onInit={typewriter => {
+          typewriter
+            .changeDelay(30)
+            .pauseFor(100)
+            .typeString(typed_content)
+            .callFunction(() => {})
+            .start();
+        }}
+      />
     </div>
   </div>
 );

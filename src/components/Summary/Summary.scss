@@ -4,87 +4,137 @@
 * @author nxxinf
 * @github https://github.com/fangnx
 * @created 2019-09-15 22:30:41
-* @last-modified 2019-09-18 01:16:57
+* @last-modified 2019-09-23 00:32:12
 */
 
 @import 'src/styles/variables';
 
 .summary {
-  border-top: 17.5vh $orange-1 solid;
-  background: $black;
+  background: $white;
   height: 100vh;
 }
 
-.summary .content {
-  color: $orange-2;
+.summary > .content {
+  background: $yellow-bri;
+  color: $black;
+  font-family: $font-fira;
   position: relative;
   text-align: center;
-  top: 17.5vh;
   z-index: 10;
 }
 
+.summary > .content {
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.topHeader {
+  display: block;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.topHeader > .content {
+  height: 100%;
+  position: relative;
+}
+
+.topHeader .leftMenu {
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  position: absolute;
+}
+
+.topHeader .leftMenu a {
+  background: $blue-bri;
+  color: $white;
+  font-size: 1.8em;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  line-height: 1.4em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.topHeader .leftMenu a:hover {
+  background: $white;
+  color: $blue;
+  font-weight: 600;
+}
+
+.topHeader .rightMenu {
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  position: absolute;
+}
+
+.topHeader .rightMenu div {
+  display: inline;
+}
+
+.topHeader .rightMenu i {
+  color: $black;
+  font-size: 2em;
+  margin-left: 5px;
+  margin-right: 10px;
+  float: right;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.topHeader .rightMenu i:hover {
+  color: $blue;
+}
+
 @media (min-width: 768px) {
-  .summary .content {
-    width: 70%;
+  .summary .content,
+  .topHeader > .content {
+    width: 750px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .summary .content {
+  .summary .content,
+  .topHeader > .content {
+    font-size: 0.8em;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-.fullName {
-  font-family: $font-fira;
-  font-size: 4em;
+.Typewriter {
+  font-size: 2.8em;
   font-weight: 500;
-  margin-top: 7.5vh;
+  line-height: 2em;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
 }
 
-.fullName > .first {
+.Typewriter h1 {
+  color: $black;
   display: inline;
-  margin-right: 0.25em;
+  font-family: $font-default;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
-.fullName > .last {
+.Typewriter h5 {
+  color: $blue;
   display: inline;
-}
-
-.roles {
-  font-family: $font-dynamic;
-  font-size: 1.6em;
-  font-weight: 500;
-  margin-top: 40px;
-  line-height: 1.6em;
-}
-
-.roles > .bullet {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.roles > .role:hover {
-  padding-bottom: 4px !important;
-  border-bottom: 4px solid $orange-1 !important;
-}
-
-.links {
-  color: $orange-1;
-  margin-top: 40px;
-}
-
-.links > div {
-  display: inline;
-}
-
-.links i {
-  font-size: 2.4em;
-  width: 1.6em;
+  font-family: $font-default;
+  font-size: 1em;
 }
 
 .audioAnimation {
@@ -101,7 +151,7 @@
   height: 60px;
   top: 0px;
   position: absolute;
-  background: linear-gradient($red-6, $red-5, $red-4);
+  background: $black;
   animation: audio 0.5s infinite ease;
 }
 
