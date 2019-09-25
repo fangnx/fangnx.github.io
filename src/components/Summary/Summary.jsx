@@ -4,12 +4,13 @@
  * @author nxxinf
  * @github https://github.com/fangnx
  * @created 2019-09-15 22:30:08
- * @last-modified 2019-09-24 23:13:43
+ * @last-modified 2019-09-24 23:31:34
  */
 
 import React from 'react';
 import calligraphicName from '../../assets/calligraphic-name.png';
 import codeAlt from '../../assets/code-alt.svg';
+import programming from '../../assets/programming-pic.svg';
 import RotatingEarth from './RotatingEarth';
 import './Summary.scss';
 
@@ -51,9 +52,10 @@ const Summary = () => (
         </div>
         <div className="info-line-4">
           learner
-          <img src={codeAlt} />
+          <img className="icon" src={codeAlt} alt="" />
         </div>
       </div>
+      <img className="programming-img" src={programming} alt="" />
     </div>
 
     <div className="right-panel"></div>
