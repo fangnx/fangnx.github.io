@@ -4,7 +4,7 @@
  * @author nxxinf
  * @github https://github.com/fangnx
  * @created 2019-08-24 17:03:39
- * @last-modified 2019-09-17 22:56:35
+ * @last-modified 2019-09-24 21:52:03
  */
 
 import React from 'react';
@@ -17,8 +17,11 @@ import './App.scss';
 const App = () => {
   return (
     <div className="App">
-      <Summary></Summary>
-      <Projects></Projects>
+      <div style={{ flex: '1' }}>
+        <Summary></Summary>
+        <Projects></Projects>
+      </div>
+
       <Footer></Footer>
     </div>
   );

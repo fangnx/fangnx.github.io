@@ -4,7 +4,7 @@
  * @author nxxinf
  * @github https://github.com/fangnx
  * @created 2019-09-17 12:26:17
- * @last-modified 2019-09-23 00:59:14
+ * @last-modified 2019-09-24 22:19:51
  */
 
 import React from 'react';
@@ -17,7 +17,7 @@ const PROJECT_INFO = [
     link: 'https://github.com/fangnx/smoretify',
     imageLink: 'https://github.com/fangnx/smoretify/raw/master/demo-image.jpg',
     description:
-      'Web application that enhances the Spotify experience with real-time song lyrics and more.'
+      'Web application that enhances the Spotify experience with real-time song lyrics.'
   },
   {
     name: 'Reaction Forum',
@@ -38,19 +38,21 @@ const PROJECT_INFO = [
 
 const Projects = () => (
   <div className="projects">
-    <div className="content">
-      <span className="title">Projects</span>
-      {PROJECT_INFO.map(p => (
-        <div className="projectCard">
-          <img src={p.imageLink} alt="" />
-          <div className="name">{p.name}</div>
-          <span onClick={() => window.open(p.link)}>
-            <Icon link name="linkify"></Icon>
-          </span>
-          <div className="description">{p.description}</div>
-        </div>
-      ))}
+    <div className="mid-panel">
+      <div className="content">
+        {PROJECT_INFO.map(p => (
+          <div className="projectCard">
+            <img src={p.imageLink} alt="" />
+            <div className="name">{p.name}</div>
+            <span onClick={() => window.open(p.link)}>
+              <Icon link name="linkify"></Icon>
+            </span>
+            <div className="description">{p.description}</div>
+          </div>
+        ))}
+      </div>
     </div>
+    <div className="right-panel"></div>
   </div>
 );
 

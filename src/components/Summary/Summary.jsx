@@ -4,13 +4,16 @@
  * @author nxxinf
  * @github https://github.com/fangnx
  * @created 2019-09-15 22:30:08
- * @last-modified 2019-09-23 01:42:00
+ * @last-modified 2019-09-24 21:28:50
  */
 
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import { Icon } from 'semantic-ui-react';
+import calligraphicName from '../../assets/calligraphic-name.png';
+import rotatingEarth from './RotatingEarth';
 import './Summary.scss';
+import RotatingEarth from './RotatingEarth';
 
 const FIRST_NAME = 'Naxin';
 const LAST_NAME = 'Fang';
@@ -18,44 +21,40 @@ const FACEBOOK_LINK = 'https://www.facebook.com/fangnx';
 const LINKEDIN_LINK = 'https://www.linkedin.com/in/naxin-fang-3821b4137/';
 const GITHUB_LINK = 'https://github.com/fangnx';
 
-const typed_content = `Hi, I'm <h1>${FIRST_NAME} ${LAST_NAME}</h1> 👏.
-<br/> I'm a Computer Science student at <h5>McGill University</h5> in Montreal, Canada.
-<br/><br/> I love coding ⌨️, music 🎧, and photography 📷.`;
-
 const Summary = () => (
   <div className="summary">
-    <div className="topHeader">
-      <div className="content">
-        <div className="leftMenu">
-          <a>Naxin Fang</a>
+    <div className="top-navbar">
+      <div className="navbar-content">
+        <div className="left">
+          <img style={{ width: '100px' }} src={calligraphicName} alt="" />
         </div>
-
-        <div className="rightMenu">
-          <div onClick={() => window.open(GITHUB_LINK, '_blank')}>
-            <Icon link name="github"></Icon>
-          </div>
-          <div onClick={() => window.open(LINKEDIN_LINK, '_blank')}>
-            <Icon link name="linkedin"></Icon>
-          </div>
-          <div onClick={() => window.open(FACEBOOK_LINK, '_blank')}>
-            <Icon link name="facebook"></Icon>
-          </div>
-        </div>
+        <div className="right"></div>
       </div>
     </div>
 
-    <div className="content">
-      <Typewriter
-        onInit={typewriter => {
-          typewriter
-            .changeDelay(30)
-            .pauseFor(100)
-            .typeString(typed_content)
-            .callFunction(() => {})
-            .start();
-        }}
-      />
+    <div className="right-navbar">
+      <div className="top-right-corner">
+        <RotatingEarth />
+      </div>
+      <div className="navbar-content">
+        <a href={FACEBOOK_LINK}>Facebook</a>
+        <a href={LINKEDIN_LINK}>LinkedIn</a>
+        <a href={GITHUB_LINK}>GitHub</a>
+      </div>
     </div>
+
+    <div className="mid-panel">
+      <div className="content">
+        <div className="info-line-0">
+          Hello<h4> World</h4>
+        </div>
+        <div className="info-line-1">I'm Naxin Fang</div>
+        <div className="info-line-2">student @ McGill University</div>
+        <div className="info-line-3">software developer</div>
+      </div>
+    </div>
+
+    <div className="right-panel"></div>
   </div>
 );
 

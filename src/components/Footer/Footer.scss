@@ -4,23 +4,23 @@
 * @author nxxinf
 * @github https://github.com/fangnx
 * @created 2019-09-17 22:54:17
-* @last-modified 2019-09-23 00:33:28
+* @last-modified 2019-09-24 22:22:01
 */
 
 @import 'src/styles/variables';
 
 .footer {
   background: $black;
-  height: 60px;
+  flex-shrink: 0;
   position: relative;
+  height: 60px;
   width: 100%;
 }
 
 .footer .content {
   color: $white;
-  font-family: $font-dynamic;
-  font-size: 1.4em;
-  line-height: 1.4em;
+  font-size: 1.1em;
+  line-height: 1em;
   position: absolute;
   text-align: center;
   top: 50%;

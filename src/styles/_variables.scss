@@ -4,38 +4,36 @@
 * @author nxxinf
 * @github https://github.com/fangnx
 * @created 2019-09-15 22:20:48
-* @last-modified 2019-09-22 21:28:49
+* @last-modified 2019-09-24 21:34:44
 */
 
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Muli|Alegreya+Sans:500,500i|Crimson+Pro:500,500i|Roboto+Mono&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Crimson+Pro:500,500i|Muli:400,600,700,800,900&display=swap&subset=latin-ext');
 
 // Theme text fonts.
 $font-default: 'Muli', sans-serif;
-$font-dynamic: 'Alegreya Sans', sans-serif;
+$font-muli: 'Muli', sans-serif;
+$font-dynamic: 'Muli', sans-serif;
 $font-fira: 'Fira Sans', sans-serif;
 $font-serif: 'Crimson Pro', serif;
-$font-code: 'Roboto Mono', sans-serif;
 
 // Theme colors.
-$red: rgba(254, 147, 140, 1);
-$orange: rgba(230, 184, 156, 1);
-$yellow: rgba(234, 210, 172, 1);
-$bluegrey: rgba(156, 175, 183, 1);
-$blue: rgba(66, 129, 164, 1);
+$black: #1a1a1a;
+$black-darker: #0d0d0d;
 
-// Theme colors - bright
-$red-bri: rgba(255, 147, 140, 1);
-$orange-bri: rgba(255, 204, 173, 1);
-$yellow-bri: rgba(255, 229, 188, 1);
-$bluegrey-bri: rgba(177, 199, 209, 1);
-$blue-bri: rgba(75, 149, 188, 1);
+$white-1: rgb(247, 247, 248);
+$white-2: rgb(244, 244, 245);
+$white-3: rgb(241, 241, 242);
+$white: #f1f1f1;
 
-// Theme colors - saturated.
-$red-satu: rgba(255, 124, 114, 1);
-$orange-satu: rgba(229, 170, 133, 1);
-$yellow-satu: rgba(234, 202, 150, 1);
-$bluegrey-satu: rgba(137, 169, 183, 1);
-$blue-satu: rgba(48, 123, 163, 1);
+$green: #52c18f;
+
+$red: #ff3e55;
+$orange: #e6b89c;
+$yellow: #ead2ac;
+$bluegrey: #9cafb7;
+$lightblue: #5776a4;
+$blue: #072044;
+$darkblue: #021d44;
 
 $indigo-9: #1a237e;
 $indigo-8: #283593;
@@ -60,13 +58,3 @@ $red-4: #ef5350;
 $red-3: #e57373;
 $red-2: #ef9a9a;
 $red-1: #ffcdd2;
-
-$black: #202020;
-$black-1: #282828;
-$black-2: #303030;
-$black-3: #383838;
-
-$white: rgb(251, 251, 251);
-$white-1: rgb(233, 233, 233);
-$white-2: rgb(180, 180, 180);
-$white-3: rgb(160, 160, 160);
