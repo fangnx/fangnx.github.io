@@ -4,11 +4,12 @@
  * @author nxxinf
  * @github https://github.com/fangnx
  * @created 2019-09-17 12:26:17
- * @last-modified 2019-09-24 22:19:51
+ * @last-modified 2019-09-24 22:31:31
  */
 
 import React from 'react';
 import { Icon } from 'semantic-ui-react';
+import fileCode from '../../assets/file-code-regular.svg';
 import './Projects.scss';
 
 const PROJECT_INFO = [
@@ -42,10 +43,11 @@ const Projects = () => (
       <div className="content">
         {PROJECT_INFO.map(p => (
           <div className="projectCard">
-            <img src={p.imageLink} alt="" />
+            <img className="image" src={p.imageLink} alt="" />
             <div className="name">{p.name}</div>
             <span onClick={() => window.open(p.link)}>
-              <Icon link name="linkify"></Icon>
+              {/* <Icon link name="linkify"></Icon> */}
+              <img className="inline-icon" src={fileCode} />
             </span>
             <div className="description">{p.description}</div>
           </div>

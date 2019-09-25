@@ -4,19 +4,15 @@
  * @author nxxinf
  * @github https://github.com/fangnx
  * @created 2019-09-15 22:30:08
- * @last-modified 2019-09-24 21:28:50
+ * @last-modified 2019-09-24 23:13:43
  */
 
 import React from 'react';
-import Typewriter from 'typewriter-effect';
-import { Icon } from 'semantic-ui-react';
 import calligraphicName from '../../assets/calligraphic-name.png';
-import rotatingEarth from './RotatingEarth';
-import './Summary.scss';
+import codeAlt from '../../assets/code-alt.svg';
 import RotatingEarth from './RotatingEarth';
+import './Summary.scss';
 
-const FIRST_NAME = 'Naxin';
-const LAST_NAME = 'Fang';
 const FACEBOOK_LINK = 'https://www.facebook.com/fangnx';
 const LINKEDIN_LINK = 'https://www.linkedin.com/in/naxin-fang-3821b4137/';
 const GITHUB_LINK = 'https://github.com/fangnx';
@@ -49,8 +45,14 @@ const Summary = () => (
           Hello<h4> World</h4>
         </div>
         <div className="info-line-1">I'm Naxin Fang</div>
-        <div className="info-line-2">student @ McGill University</div>
-        <div className="info-line-3">software developer</div>
+        <div className="info-line-2">cs student @ McGill University</div>
+        <div className="info-line-3">
+          <h5>passion</h5>ate software developer
+        </div>
+        <div className="info-line-4">
+          learner
+          <img src={codeAlt} />
+        </div>
       </div>
     </div>
 

@@ -4,7 +4,7 @@
 * @author nxxinf
 * @github https://github.com/fangnx
 * @created 2019-09-15 22:30:41
-* @last-modified 2019-09-24 21:51:06
+* @last-modified 2019-09-24 23:16:09
 */
 
 @import 'src/styles/variables';
@@ -118,8 +118,7 @@
 }
 
 @media (min-width: 768px) {
-  .summary .content,
-  .topHeader > .content {
+  .summary .content {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -127,8 +126,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .summary .content,
-  .topHeader > .content {
+  .summary .content {
     font-size: 0.8em;
     width: 90%;
     margin-left: auto;
@@ -153,24 +151,29 @@
   font-size: 1.8em;
   font-weight: 500;
   margin-top: 1em;
-  line-height: 1.4em;
+  line-height: 1.8em;
 }
 
 .info-line-3 {
   font-family: $font-fira;
   font-size: 1.8em;
   font-weight: 500;
-  line-height: 1.4em;
+  line-height: 1.8em;
 }
 
-.Typewriter {
-  font-size: 3em;
-  font-family: $font-default;
-  font-weight: 600;
-  line-height: 2em;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: left;
+.info-line-4 {
+  display: flex;
+  align-items: center;
+  font-family: $font-fira;
+  font-size: 1.8em;
+  font-weight: 500;
+  line-height: 1.8em;
+}
+
+.summary img {
+  display: inline;
+  margin: 0 2px 0 2px;
+  width: 2em;
 }
 
 h1 {
@@ -182,7 +185,7 @@ h1 {
 }
 
 h2 {
-  color: $red-4;
+  color: $red;
   display: inline;
   font-family: $font-serif;
   font-size: 1.4em;
@@ -198,43 +201,8 @@ h4 {
 h5 {
   color: $red;
   display: inline;
-  font-family: $font-serif;
-  font-size: 1.1em;
-}
-
-.wave {
-  opacity: 0.5;
-  position: absolute;
-  bottom: -10vw;
-  left: -10vw;
-  background: $blue;
-  width: 28vw;
-  height: 21vw;
-  margin-left: 0vw;
-  margin-top: 0vw;
-  transform-origin: 49% 49%;
-  border-radius: 42%;
-  animation: drift 3000ms infinite linear;
-  z-index: 5;
-}
-
-.wave.three {
-  animation: drift 6000ms infinite linear;
-  background: $blue;
-}
-
-.wave.two {
-  animation: drift 7500ms infinite linear;
-  background: $yellow;
-}
-
-@keyframes drift {
-  from {
-    transform: rotate(0deg);
-  }
-  from {
-    transform: rotate(360deg);
-  }
+  font-family: $font-default;
+  font-size: 1em;
 }
 
 .globe {
