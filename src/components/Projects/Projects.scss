@@ -4,13 +4,12 @@
 * @author nxxinf
 * @github https://github.com/fangnx
 * @created 2019-09-17 12:26:23
-* @last-modified 2019-09-24 22:39:41
+* @last-modified 2019-09-26 18:11:02
 */
 
 @import 'src/styles/variables';
 
 .projects {
-  background: $white;
   height: auto;
   width: 100%;
   position: relative;
@@ -62,7 +61,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
   .projects .content {
     width: 90%;
     left: 5%;

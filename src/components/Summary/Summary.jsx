@@ -4,13 +4,14 @@
  * @author nxxinf
  * @github https://github.com/fangnx
  * @created 2019-09-15 22:30:08
- * @last-modified 2019-09-24 23:31:34
+ * @last-modified 2019-09-26 20:12:28
  */
 
 import React from 'react';
 import calligraphicName from '../../assets/calligraphic-name.png';
 import codeAlt from '../../assets/code-alt.svg';
-import programming from '../../assets/programming-pic.svg';
+import pan from '../../assets/pan.svg';
+import programmerImage from '../../assets/git-man-pic.svg';
 import RotatingEarth from './RotatingEarth';
 import './Summary.scss';
 
@@ -23,7 +24,11 @@ const Summary = () => (
     <div className="top-navbar">
       <div className="navbar-content">
         <div className="left">
-          <img style={{ width: '100px' }} src={calligraphicName} alt="" />
+          <img
+            style={{ filter: 'invert(100%)', width: '100px' }}
+            src={calligraphicName}
+            alt=""
+          />
         </div>
         <div className="right"></div>
       </div>
@@ -42,20 +47,25 @@ const Summary = () => (
 
     <div className="mid-panel">
       <div className="content">
-        <div className="info-line-0">
-          Hello<h4> World</h4>
+        <div className="content-left">
+          <div className="info-line-0">HELLO WORLD</div>
+          <div className="info-line-1">I'M NAXIN FANG</div>
+          <div className="info-line-2">cs student @ McGill University</div>
+          <div className="info-line-3">
+            passionate software developer
+            <img className="icon" src={codeAlt} alt="" />
+          </div>
+          <div className="info-line-4">technology enthusiast</div>
+          <div className="info-line-5">
+            Welcome to my portfolio site
+            <img className="icon" src={pan} alt="" />
+          </div>
         </div>
-        <div className="info-line-1">I'm Naxin Fang</div>
-        <div className="info-line-2">cs student @ McGill University</div>
-        <div className="info-line-3">
-          <h5>passion</h5>ate software developer
-        </div>
-        <div className="info-line-4">
-          learner
-          <img className="icon" src={codeAlt} alt="" />
+
+        <div className="content-right">
+          <img className="programming-img" src={programmerImage} alt="" />
         </div>
       </div>
-      <img className="programming-img" src={programming} alt="" />
     </div>
 
     <div className="right-panel"></div>
