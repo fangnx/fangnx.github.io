@@ -4,7 +4,7 @@
  * @author nxxinf
  * @github https://github.com/fangnx
  * @created 2019-08-24 17:03:39
- * @last-modified 2019-09-24 21:52:03
+ * @last-modified 2019-09-27 01:58:00
  */
 
 import React from 'react';
@@ -19,7 +19,7 @@ const App = () => {
     <div className="App">
       <div style={{ flex: '1' }}>
         <Summary></Summary>
-        <Projects></Projects>
+        {/* <Projects></Projects> */}
       </div>
 
       <Footer></Footer>

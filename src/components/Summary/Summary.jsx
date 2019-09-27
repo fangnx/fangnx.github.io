@@ -4,14 +4,14 @@
  * @author nxxinf
  * @github https://github.com/fangnx
  * @created 2019-09-15 22:30:08
- * @last-modified 2019-09-26 20:12:28
+ * @last-modified 2019-09-27 01:45:35
  */
 
 import React from 'react';
 import calligraphicName from '../../assets/calligraphic-name.png';
 import codeAlt from '../../assets/code-alt.svg';
 import pan from '../../assets/pan.svg';
-import programmerImage from '../../assets/git-man-pic.svg';
+import programmerImage from '../../assets/hacker-pic.svg';
 import RotatingEarth from './RotatingEarth';
 import './Summary.scss';
 
@@ -49,15 +49,16 @@ const Summary = () => (
       <div className="content">
         <div className="content-left">
           <div className="info-line-0">HELLO WORLD</div>
-          <div className="info-line-1">I'M NAXIN FANG</div>
-          <div className="info-line-2">cs student @ McGill University</div>
+          <div className="info-line-1">
+            I'M <span className="wavy-underlined">NAXIN FANG</span>
+          </div>
+          <div className="info-line-2">CS student @ McGill University</div>
           <div className="info-line-3">
-            passionate software developer
+            Passionate software developer
             <img className="icon" src={codeAlt} alt="" />
           </div>
-          <div className="info-line-4">technology enthusiast</div>
+          <div className="info-line-4">Web technology enthusiast</div>
           <div className="info-line-5">
-            Welcome to my portfolio site
             <img className="icon" src={pan} alt="" />
           </div>
         </div>

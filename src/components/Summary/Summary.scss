@@ -4,7 +4,7 @@
 * @author nxxinf
 * @github https://github.com/fangnx
 * @created 2019-09-15 22:30:41
-* @last-modified 2019-09-26 20:36:16
+* @last-modified 2019-09-27 02:08:15
 */
 
 @import 'src/styles/variables';
@@ -13,23 +13,29 @@
   background: $black;
   height: 100vh;
   position: relative;
-  transform: translate3d(0, 0, 0);
 }
 
 .summary .mid-panel {
-  // background-size: 20% 100%;
-  // background-image: linear-gradient(
-  //   to right,
-  //   $black,
-  //   transparent 0.67px,
-  //   transparent 100%
-  // );
-  // background: linear-gradient(90deg, $green 50px, transparent 0);
   position: absolute;
   top: 5%;
   left: 5%;
   height: 90%;
   width: 90%;
+  overflow: hidden;
+}
+
+.summary .mid-panel::before {
+  background-size: 80%;
+  background-repeat: round;
+  background-image: url(../../assets/wave.svg);
+  content: '';
+  position: absolute;
+  overflow: hidden;
+  width: 150%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  transform: rotate(30deg);
 }
 
 .summary .right-panel {
@@ -59,7 +65,7 @@
 
 @media (min-width: 768px) {
   .summary .content {
-    width: 75%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -67,7 +73,6 @@
 
 @media (min-width: 0px) and (max-width: 767px) {
   .summary .content {
-    font-size: 0.8em;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -107,6 +112,11 @@
 
   .right-navbar > .navbar-content {
     // display: none;
+  }
+
+  .info-line-0,
+  .info-line-1 {
+    font-size: 4em !important;
   }
 }
 
@@ -165,7 +175,7 @@
   top: 50%;
   right: 50%;
   position: absolute;
-  transform: translate(0, -50%);
+  transform: translate(50%, -50%);
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
@@ -182,13 +192,13 @@
 }
 
 .info-line-0 {
-  font-size: 4em;
+  font-size: 4.5em;
   font-weight: 900;
   line-height: 1.2em;
 }
 
 .info-line-1 {
-  font-size: 4em;
+  font-size: 4.5em;
   font-weight: 900;
   line-height: 1.2em;
 }
@@ -196,11 +206,10 @@
 .info-line-2 {
   display: flex;
   align-items: center;
-  // font-family: $font-fira;
   font-size: 1.3em;
   font-weight: 500;
   margin-top: 1em;
-  line-height: 1.8em;
+  line-height: 2.1em;
 }
 
 .info-line-2::before {
@@ -208,14 +217,14 @@
   content: '{ ';
   margin-right: 0.25em;
   color: $green;
-  font-size: 1.2em;
+  font-size: 1.6em;
 }
 
 .info-line-4::after {
   content: ' }';
   margin-left: 0.25em;
   color: $green;
-  font-size: 1.2em;
+  font-size: 1.6em;
 }
 
 .info-line-3 {
@@ -223,7 +232,7 @@
   align-items: center;
   font-size: 1.3em;
   font-weight: 500;
-  line-height: 1.8em;
+  line-height: 2.1em;
 }
 
 .info-line-4 {
@@ -231,7 +240,7 @@
   align-items: center;
   font-size: 1.3em;
   font-weight: 500;
-  line-height: 1.8em;
+  line-height: 2.1em;
 }
 
 .info-line-5 {
@@ -239,7 +248,7 @@
   align-items: center;
   font-size: 1.3em;
   font-weight: 500;
-  line-height: 1.8em;
+  line-height: 2em;
   padding-top: 20px;
 }
 
@@ -251,9 +260,10 @@
 
 @media (min-width: 768px) {
   .summary .programming-img {
-    width: 30vw;
+    width: 25vw;
     position: absolute;
     bottom: 0%;
+    right: 0%;
   }
 }
 
@@ -346,5 +356,36 @@ h5 {
 
   from {
     transform: translateX(-50%);
+  }
+}
+
+.shine-on-hover:hover {
+  color: $green;
+}
+
+.wavy-underlined {
+  background: url('../../assets/wave-green.svg');
+  background-repeat: repeat;
+  background-position-x: 0%;
+  background-position-y: 50%;
+  background-size: 30px auto;
+  background-repeat: repeat-x;
+  background-position: 0px 1.2em;
+  animation: move 10s linear infinite;
+  animation-play-state: paused;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.wavy-underlined:hover {
+  animation-play-state: running;
+}
+
+@keyframes move {
+  from {
+    background-position: 0px 1.2em;
+  }
+  to {
+    background-position: 500px 1.2em;
   }
 }
