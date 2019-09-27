@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eeeec9bc354b5f6b668f25419e171274",
+    "revision": "cc9e27c40a13af4d31af38b408448932",
     "url": "/index.html"
   },
   {
-    "revision": "e370a5e03faf03c4dcef",
+    "revision": "31c3b30f1bf85c36f065",
     "url": "/static/css/2.621b5bde.chunk.css"
   },
   {
-    "revision": "314b3f0e771027ac0d75",
-    "url": "/static/css/main.c19b4baf.chunk.css"
+    "revision": "07a8902ec1e1d59916d6",
+    "url": "/static/css/main.24877f5a.chunk.css"
   },
   {
-    "revision": "e370a5e03faf03c4dcef",
-    "url": "/static/js/2.6a125e01.chunk.js"
+    "revision": "31c3b30f1bf85c36f065",
+    "url": "/static/js/2.2a4f931b.chunk.js"
   },
   {
-    "revision": "314b3f0e771027ac0d75",
-    "url": "/static/js/main.18741da6.chunk.js"
+    "revision": "07a8902ec1e1d59916d6",
+    "url": "/static/js/main.f0fb748e.chunk.js"
   },
   {
     "revision": "554fd5738f1ea9dec1d7",
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/brand-icons.e8c322de.woff2"
   },
   {
-    "revision": "42a1e9ea2071d2e0bb6bf8c34d204c4d",
-    "url": "/static/media/code-alt.42a1e9ea.svg"
+    "revision": "d5ebe657596771e77081d330252bf9e2",
+    "url": "/static/media/code-alt.d5ebe657.svg"
   },
   {
     "revision": "c99dd4ba133d54b2e763a6cf669ab5c9",
@@ -54,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9c74e172f87984c48ddf5c8108cabe67",
     "url": "/static/media/flags.9c74e172.png"
+  },
+  {
+    "revision": "fc7232c4b3f78945ba4c76259d715a31",
+    "url": "/static/media/hacker-pic.fc7232c4.svg"
   },
   {
     "revision": "0ab54153eeeca0ce03978cc463b257f7",
@@ -96,7 +100,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/outline-icons.ef60a4f6.woff"
   },
   {
-    "revision": "10121667ff0d18d0093adade409761d8",
-    "url": "/static/media/programming-pic.10121667.svg"
+    "revision": "59171f390a14533a16e39ef09093ab58",
+    "url": "/static/media/pan.59171f39.svg"
+  },
+  {
+    "revision": "9bba884e95cd06dab5f91d6e2de7d9b5",
+    "url": "/static/media/wave-green.9bba884e.svg"
+  },
+  {
+    "revision": "aa6772cc7e59ca27fff37c7158a27266",
+    "url": "/static/media/wave.aa6772cc.svg"
   }
 ]);
