@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "73a77157d77616a7dc31f10afc27656c",
+    "revision": "a099b1e62be2ee647412b86efb398634",
     "url": "/index.html"
   },
   {
-    "revision": "31c3b30f1bf85c36f065",
+    "revision": "e90cdf49e319d6563876",
     "url": "/static/css/2.621b5bde.chunk.css"
   },
   {
-    "revision": "7e3df01bb19cd03c6781",
-    "url": "/static/css/main.f544243f.chunk.css"
+    "revision": "4e45178702dbb7811273",
+    "url": "/static/css/main.318c92b7.chunk.css"
   },
   {
-    "revision": "31c3b30f1bf85c36f065",
-    "url": "/static/js/2.2a4f931b.chunk.js"
+    "revision": "e90cdf49e319d6563876",
+    "url": "/static/js/2.1a5ba97a.chunk.js"
   },
   {
-    "revision": "7e3df01bb19cd03c6781",
-    "url": "/static/js/main.413e8f01.chunk.js"
+    "revision": "4e45178702dbb7811273",
+    "url": "/static/js/main.47d6c2d9.chunk.js"
   },
   {
     "revision": "554fd5738f1ea9dec1d7",
@@ -48,6 +48,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/code-alt.d5ebe657.svg"
   },
   {
+    "revision": "615f26f44cdf0fc6cac81e9be1503608",
+    "url": "/static/media/coder-pic.615f26f4.svg"
+  },
+  {
+    "revision": "54aaf8a6d747903707d5c5c190048440",
+    "url": "/static/media/facebook-square-brands.54aaf8a6.svg"
+  },
+  {
     "revision": "c99dd4ba133d54b2e763a6cf669ab5c9",
     "url": "/static/media/file-code-regular.c99dd4ba.svg"
   },
@@ -56,8 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/flags.9c74e172.png"
   },
   {
-    "revision": "fc7232c4b3f78945ba4c76259d715a31",
-    "url": "/static/media/hacker-pic.fc7232c4.svg"
+    "revision": "d1e7584ba281453de06c1df4b984901d",
+    "url": "/static/media/github-square-brands.d1e7584b.svg"
   },
   {
     "revision": "0ab54153eeeca0ce03978cc463b257f7",
@@ -78,6 +86,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
     "url": "/static/media/icons.faff9214.woff"
+  },
+  {
+    "revision": "267e1bf23b8077f0653180d8c3c18832",
+    "url": "/static/media/linkedin-brands.267e1bf2.svg"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
@@ -106,9 +118,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9bba884e95cd06dab5f91d6e2de7d9b5",
     "url": "/static/media/wave-green.9bba884e.svg"
-  },
-  {
-    "revision": "aa6772cc7e59ca27fff37c7158a27266",
-    "url": "/static/media/wave.aa6772cc.svg"
   }
 ]);
