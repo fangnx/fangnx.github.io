@@ -4,7 +4,7 @@
 * @author nxxinf
 * @github https://github.com/fangnx
 * @created 2019-09-15 22:30:41
-* @last-modified 2019-09-27 02:08:15
+* @last-modified 2019-10-02 12:06:33
 */
 
 @import 'src/styles/variables';
@@ -24,38 +24,31 @@
   overflow: hidden;
 }
 
-.summary .mid-panel::before {
-  background-size: 80%;
-  background-repeat: round;
-  background-image: url(../../assets/wave.svg);
-  content: '';
-  position: absolute;
-  overflow: hidden;
-  width: 150%;
-  height: 200%;
-  top: -50%;
-  left: -50%;
-  transform: rotate(30deg);
-}
+// .summary .mid-panel::before {
+//   background-size: 10%;
+//   background-repeat: round;
+//   background-image: url(../../assets/wave.svg);
+//   content: '';
+//   position: absolute;
+//   overflow: hidden;
+//   width: 150%;
+//   height: 200%;
+//   top: -50%;
+//   left: -50%;
+//   transform: rotate(30deg);
+// }
 
 .summary .right-panel {
-  background-size: 100% 100%;
-  background-image: linear-gradient(
-    to right,
-    $white,
-    transparent 1px,
-    transparent 100%
-  );
+  border-left: 1px $white solid;
   position: absolute;
   right: 0;
   height: 100%;
-  width: 5%;
+  width: 60px;
 }
 
 .summary .content {
   color: $white;
   font-family: $font-default;
-  height: 65%;
   position: relative;
   text-align: center;
   z-index: 10;
@@ -66,6 +59,8 @@
 @media (min-width: 768px) {
   .summary .content {
     width: 80%;
+    height: 70%;
+    top: 15%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -74,6 +69,8 @@
 @media (min-width: 0px) and (max-width: 767px) {
   .summary .content {
     width: 90%;
+    height: 80%;
+    top: 10%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -98,25 +95,32 @@
     width: 100% !important;
   }
 
+  .info-line-large {
+    font-size: 3em !important;
+  }
+
+  .top-navbar {
+    border-bottom: none !important;
+  }
+
   .top-navbar > .navbar-content > .left {
     left: 15px !important;
     top: 30px !important;
     position: absolute;
   }
 
-  .right-navbar > .top-right-corner {
-    position: absolute;
-    top: 40px !important;
-    right: 40px !important;
+  .right-panel {
+    border-left: none !important;
   }
-
   .right-navbar > .navbar-content {
-    // display: none;
+    display: none;
   }
 
-  .info-line-0,
-  .info-line-1 {
-    font-size: 4em !important;
+  .globe {
+    top: 10px !important;
+    right: 10px !important;
+    width: 40px !important;
+    height: 40px !important;
   }
 }
 
@@ -135,9 +139,10 @@
 }
 
 .top-navbar {
+  border-bottom: 1px $white solid;
   color: $white;
   display: block;
-  height: 12.5vh;
+  height: 60px;
   position: absolute;
   top: 0;
   width: 100%;
@@ -161,7 +166,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 5%;
+  width: 60px;
   z-index: 10;
 }
 
@@ -191,65 +196,58 @@
   padding-left: 2px;
 }
 
-.info-line-0 {
-  font-size: 4.5em;
-  font-weight: 900;
+.info-line-large {
+  font-size: 3.5em;
+  font-weight: 800;
   line-height: 1.2em;
 }
 
-.info-line-1 {
-  font-size: 4.5em;
-  font-weight: 900;
-  line-height: 1.2em;
+.info-roles {
+  font-family: $font-muli;
+  padding-left: 1em;
 }
 
-.info-line-2 {
+.info-line-init {
   display: flex;
   align-items: center;
-  font-size: 1.3em;
-  font-weight: 500;
-  margin-top: 1em;
-  line-height: 2.1em;
-}
-
-.info-line-2::before {
-  display: inline;
-  content: '{ ';
-  margin-right: 0.25em;
-  color: $green;
-  font-size: 1.6em;
-}
-
-.info-line-4::after {
-  content: ' }';
-  margin-left: 0.25em;
-  color: $green;
-  font-size: 1.6em;
-}
-
-.info-line-3 {
-  display: flex;
-  align-items: center;
-  font-size: 1.3em;
-  font-weight: 500;
-  line-height: 2.1em;
-}
-
-.info-line-4 {
-  display: flex;
-  align-items: center;
-  font-size: 1.3em;
-  font-weight: 500;
-  line-height: 2.1em;
-}
-
-.info-line-5 {
-  display: flex;
-  align-items: center;
-  font-size: 1.3em;
+  font-family: $font-muli;
+  font-size: 1.4em;
   font-weight: 500;
   line-height: 2em;
   padding-top: 20px;
+}
+
+.info-line-init::after {
+  content: ' :';
+  margin-left: 0.25em;
+  color: $green;
+}
+
+.info-line-normal {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 2em;
+}
+
+.info-line-ending {
+  display: flex;
+  align-items: center;
+  font-family: $font-muli;
+  font-size: 1.4em;
+  font-weight: 500;
+  line-height: 2em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.social-media {
+  .media-icon {
+    display: inline;
+    width: 2.4em !important;
+    margin-right: 2em;
+  }
 }
 
 .summary .icon {
@@ -303,19 +301,21 @@ h5 {
   font-size: 1em;
 }
 
+.globe {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 20;
+}
+
 @media (min-width: 768px) {
   .globe {
     background: $black;
     border: 2px solid $green;
     border-radius: 50%;
     overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     height: 60px;
     width: 60px;
-    // z-index: 20;
 
     svg {
       animation: rotation 5s linear 0s infinite;
@@ -332,13 +332,8 @@ h5 {
     border: 2px solid $green;
     border-radius: 50%;
     overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 40px;
-    width: 40px;
-    // z-index: 20;
+    height: 60px;
+    width: 60px;
 
     svg {
       animation: rotation 5s linear 0s infinite;
@@ -367,25 +362,25 @@ h5 {
   background: url('../../assets/wave-green.svg');
   background-repeat: repeat;
   background-position-x: 0%;
-  background-position-y: 50%;
-  background-size: 30px auto;
+  background-position-y: 60%;
+  background-size: 0.6em auto;
   background-repeat: repeat-x;
-  background-position: 0px 1.2em;
+  background-position: px 1em;
   animation: move 10s linear infinite;
-  animation-play-state: paused;
+  animation-play-state: running;
   text-decoration: none;
   background-color: transparent;
 }
 
 .wavy-underlined:hover {
-  animation-play-state: running;
+  animation-play-state: paused;
 }
 
 @keyframes move {
   from {
-    background-position: 0px 1.2em;
+    background-position: 0px 1.1em;
   }
   to {
-    background-position: 500px 1.2em;
+    background-position: 500px 1em;
   }
 }
