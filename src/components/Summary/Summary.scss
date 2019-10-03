@@ -4,7 +4,7 @@
 * @author nxxinf
 * @github https://github.com/fangnx
 * @created 2019-09-15 22:30:41
-* @last-modified 2019-10-02 12:06:33
+* @last-modified 2019-10-02 20:33:53
 */
 
 @import 'src/styles/variables';
@@ -17,9 +17,8 @@
 
 .summary .mid-panel {
   position: absolute;
-  top: 5%;
   left: 5%;
-  height: 90%;
+  height: 100%;
   width: 90%;
   overflow: hidden;
 }
@@ -53,20 +52,74 @@
   text-align: center;
   z-index: 10;
   text-align: left;
-  top: 17.5%;
 }
 
 @media (min-width: 768px) {
   .summary .content {
     width: 80%;
-    height: 70%;
-    top: 15%;
+    height: 72%;
+    top: 14%;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .summary .content > .content-left {
+    position: absolute;
+    left: 0%;
+    height: 100%;
+    width: 60%;
+  }
+
+  .summary .content > .content-right {
+    position: absolute;
+    left: 60%;
+    height: 100%;
+    width: 40%;
+  }
+
+  .info-line-init {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .top-navbar {
+    color: $white;
+    display: block;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .top-navbar > .navbar-content {
+    height: 100%;
+    position: relative;
+  }
+
+  .top-navbar > .navbar-content > .left {
+    left: 20px;
+    top: 30px;
+    position: absolute;
+  }
+
+  .summary .programming-img {
+    width: 25vw;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+  }
+
+  .globe {
+    top: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    z-index: 20;
+  }
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .summary .content {
     width: 90%;
     height: 80%;
@@ -83,20 +136,32 @@
   .summary .content > .content-left {
     position: absolute;
     left: 0%;
-    height: 100%;
+    height: 80% !important;
     width: 100% !important;
   }
 
   .summary .content > .content-right {
-    display: none !important;
+    // display: none !important;
     position: absolute;
-    left: 0%;
-    height: 100%;
+    bottom: 0%;
+    left: 0% !important;
+    height: 20% !important;
     width: 100% !important;
   }
 
   .info-line-large {
     font-size: 3em !important;
+  }
+
+  .info-line-init,
+  .info-line-normal,
+  .info-line-ending {
+    font-size: 1.2em !important;
+  }
+
+  .info-line-init {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .top-navbar {
@@ -117,47 +182,19 @@
   }
 
   .globe {
-    top: 10px !important;
-    right: 10px !important;
-    width: 40px !important;
-    height: 40px !important;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
   }
-}
 
-.summary .content > .content-left {
-  position: absolute;
-  left: 0%;
-  height: 100%;
-  width: 60%;
-}
-
-.summary .content > .content-right {
-  position: absolute;
-  left: 60%;
-  height: 100%;
-  width: 40%;
-}
-
-.top-navbar {
-  border-bottom: 1px $white solid;
-  color: $white;
-  display: block;
-  height: 60px;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
-
-.top-navbar > .navbar-content {
-  height: 100%;
-  position: relative;
-}
-
-.top-navbar > .navbar-content > .left {
-  left: 20px;
-  top: 30px;
-  position: absolute;
+  .summary .programming-img {
+    width: 30vw;
+    position: absolute;
+    bottom: 50px;
+    right: 20%;
+    transform: translateX(50%);
+  }
 }
 
 .right-navbar {
@@ -196,50 +233,65 @@
   padding-left: 2px;
 }
 
+.text-emerge-in {
+  animation: emerge;
+  animation-delay: 0s;
+  animation-duration: 1.5s;
+}
+
+.text-fade-right {
+  animation: fade-right;
+  animation-delay: 1.5s;
+  animation-duration: 0.5s;
+}
+
 .info-line-large {
-  font-size: 3.5em;
+  font-size: 4em;
   font-weight: 800;
   line-height: 1.2em;
 }
 
 .info-roles {
-  font-family: $font-muli;
-  padding-left: 1em;
+  // padding-left: 1em;
 }
 
 .info-line-init {
   display: flex;
   align-items: center;
-  font-family: $font-muli;
   font-size: 1.4em;
   font-weight: 500;
-  line-height: 2em;
-  padding-top: 20px;
+  line-height: 1.5em;
 }
 
 .info-line-init::after {
   content: ' :';
   margin-left: 0.25em;
-  color: $green;
+  color: $green-lighter;
 }
 
 .info-line-normal {
   display: flex;
   align-items: center;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 500;
-  line-height: 2em;
+  line-height: 1.5em;
+}
+
+.info-line-normal::before {
+  content: '*';
+  color: $green-lighter;
+  margin-right: 0.25em;
 }
 
 .info-line-ending {
   display: flex;
   align-items: center;
-  font-family: $font-muli;
   font-size: 1.4em;
+  font-style: italic;
   font-weight: 500;
-  line-height: 2em;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  line-height: 1.5em;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .social-media {
@@ -252,26 +304,8 @@
 
 .summary .icon {
   display: inline;
-  margin: 0 2px 0 2px;
+  margin: 0 0.25em 0 0.25em;
   width: 1.6em;
-}
-
-@media (min-width: 768px) {
-  .summary .programming-img {
-    width: 25vw;
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-  }
-}
-
-@media (min-width: 0px) and (max-width: 767px) {
-  .summary .programming-img {
-    width: 150px;
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-  }
 }
 
 h1 {
@@ -302,44 +336,16 @@ h5 {
 }
 
 .globe {
+  background: $black;
+  border: 2px solid $green;
+  border-radius: 50%;
+  overflow: hidden;
   position: absolute;
-  top: 30px;
-  right: 30px;
-  z-index: 20;
-}
 
-@media (min-width: 768px) {
-  .globe {
-    background: $black;
-    border: 2px solid $green;
-    border-radius: 50%;
-    overflow: hidden;
-    height: 60px;
-    width: 60px;
-
-    svg {
-      animation: rotation 5s linear 0s infinite;
-      path {
-        stroke: $green;
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .globe {
-    background: $black;
-    border: 2px solid $green;
-    border-radius: 50%;
-    overflow: hidden;
-    height: 60px;
-    width: 60px;
-
-    svg {
-      animation: rotation 5s linear 0s infinite;
-      path {
-        stroke: $green;
-      }
+  svg {
+    animation: rotation 5s linear 0s infinite;
+    path {
+      stroke: $green;
     }
   }
 }
@@ -382,5 +388,67 @@ h5 {
   }
   to {
     background-position: 500px 1em;
+  }
+}
+
+@keyframes emerge {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    margin-left: -100px;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.wave-bubble {
+  position: absolute;
+  width: 100px;
+  height: 105px;
+  border-radius: 45%;
+  z-index: -1;
+}
+
+.wb-1 {
+  background: $blue;
+  opacity: 0.8;
+  top: -3em;
+  left: -6em;
+  animation: shake 80000ms infinite linear;
+}
+
+.wb-2 {
+  background: $green;
+  opacity: 0.6;
+  top: -3.5em;
+  left: -5.5em;
+  animation: shake 40000ms infinite linear;
+}
+
+.wb-3 {
+  background: $blue;
+  opacity: 0.8;
+  top: -4em;
+  left: -5em;
+  animation: shake 20000ms infinite linear;
+}
+
+@keyframes shake {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
   }
 }

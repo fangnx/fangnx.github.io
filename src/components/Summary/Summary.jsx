@@ -4,13 +4,13 @@
  * @author nxxinf
  * @github https://github.com/fangnx
  * @created 2019-09-15 22:30:08
- * @last-modified 2019-10-02 12:12:32
+ * @last-modified 2019-10-02 20:49:30
  */
 
 import React from 'react';
 import codeAlt from '../../assets/code-alt.svg';
 import pan from '../../assets/pan.svg';
-import programmerImage from '../../assets/coder-pic.svg';
+import programmerImage from '../../assets/vivid-laptop.svg';
 import fbIcon from '../../assets/facebook-square-brands.svg';
 import linkedinIcon from '../../assets/linkedin-brands.svg';
 import ghIcon from '../../assets/github-square-brands.svg';
@@ -48,22 +48,24 @@ const Summary = () => (
     <div className="mid-panel">
       <div className="content">
         <div className="content-left">
-          <span className="info-line-large">
-            WELCOME TO THE PAGE OF
-            <span className="shine-on-hover"> NAXIN FANG</span>
+          <div class="wave-bubble wb-1"></div>
+          <div class="wave-bubble wb-2"></div>
+          <div class="wave-bubble wb-3"></div>
+
+          <span className="info-line-large text-emerge-in">
+            <span>Hi, I'm Naxin Fang. Welcome to my page.</span>
           </span>
-          <span className="info-line-init"> I'm a</span>
-          <div className="info-roles">
+          <span className="info-line-init text-emerge-in"> I'm a</span>
+          <div className="info-roles text-emerge-in">
             <span className="info-line-normal">
-              CS student @ McGill University
+              CS student at McGill University
             </span>
             <span className="info-line-normal">
               Passionate software developer
-              <img className="icon" src={codeAlt} alt="" />
             </span>
             <span className="info-line-normal">Web technology enthusiast</span>
           </div>
-          <span className="info-line-ending">
+          <span className="info-line-ending text-emerge-in">
             Hello World
             <img className="icon" src={pan} alt="" />
           </span>
@@ -84,6 +86,8 @@ const Summary = () => (
         <div className="content-right">
           <img className="programming-img" src={programmerImage} alt="" />
         </div>
+
+        <div class="wave-bubble-wrapper"></div>
       </div>
     </div>
     <div className="right-panel"></div>

@@ -4,16 +4,15 @@
 * @author nxxinf
 * @github https://github.com/fangnx
 * @created 2019-09-15 22:20:48
-* @last-modified 2019-10-02 12:14:24
+* @last-modified 2019-10-02 20:30:57
 */
 
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Crimson+Pro|Muli|B612:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=B612|Alegreya|Muli:500,500i,600,600i,800,800i&display=swap&subset=latin-ext');
 
 // Theme text fonts.
 $font-default: 'B612', sans-serif;
-$font-muli: 'Muli', sans-serif;
-$font-code: 'Fira Sans', sans-serif;
-$font-serif: 'Crimson Pro', serif;
+$font-plain: 'Muli', sans-serif;
+$font-serif: 'Alegreya', serif;
 
 // Theme colors.
 $black: #0d0d0d;
@@ -22,10 +21,10 @@ $black-darker: #090909;
 $white: #f1f1f1;
 $green: #52c18f;
 $green-lighter: #78ceae;
-$red: #ef5350;
+$indigo: #5c6bc0;
+$indigo-lighter: #9fa8da;
+$red: #f3817f;
 $orange: #e6b89c;
 $yellow: #ead2ac;
 $bluegrey: #9cafb7;
-$lightblue: #5776a4;
-$blue: #072044;
-$darkblue: #021d44;
+$blue: #78a5ce;
