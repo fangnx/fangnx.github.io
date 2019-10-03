@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.6464a498.chunk.css",
-    "main.js": "/static/js/main.b0b474ae.chunk.js",
-    "main.js.map": "/static/js/main.b0b474ae.chunk.js.map",
+    "main.js": "/static/js/main.f572ca96.chunk.js",
+    "main.js.map": "/static/js/main.f572ca96.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.728a6998.js",
     "runtime~main.js.map": "/static/js/runtime~main.728a6998.js.map",
     "static/css/2.621b5bde.chunk.css": "/static/css/2.621b5bde.chunk.css",
     "static/js/2.37a90892.chunk.js": "/static/js/2.37a90892.chunk.js",
     "static/js/2.37a90892.chunk.js.map": "/static/js/2.37a90892.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ce15fedd33d0aa260c97e8137e81de41.js": "/precache-manifest.ce15fedd33d0aa260c97e8137e81de41.js",
+    "precache-manifest.b17add76c366828946210eb62d9aa014.js": "/precache-manifest.b17add76c366828946210eb62d9aa014.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.621b5bde.chunk.css.map": "/static/css/2.621b5bde.chunk.css.map",
     "static/css/main.6464a498.chunk.css.map": "/static/css/main.6464a498.chunk.css.map",
     "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff",
     "static/media/code-alt.svg": "/static/media/code-alt.95d491e9.svg",
-    "static/media/coder-pic.svg": "/static/media/coder-pic.615f26f4.svg",
     "static/media/facebook-square-brands.svg": "/static/media/facebook-square-brands.54aaf8a6.svg",
     "static/media/file-code-regular.svg": "/static/media/file-code-regular.c99dd4ba.svg",
     "static/media/github-square-brands.svg": "/static/media/github-square-brands.d1e7584b.svg",
     "static/media/linkedin-brands.svg": "/static/media/linkedin-brands.267e1bf2.svg",
     "static/media/pan.svg": "/static/media/pan.bb3844c1.svg",
+    "static/media/vivid-laptop.svg": "/static/media/vivid-laptop.c0b6a6d2.svg",
     "static/media/Summary.scss": "/static/media/wave-green.9bba884e.svg"
   }
 }
