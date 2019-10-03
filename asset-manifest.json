@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.6464a498.chunk.css",
-    "main.js": "/static/js/main.f572ca96.chunk.js",
-    "main.js.map": "/static/js/main.f572ca96.chunk.js.map",
+    "main.js": "/static/js/main.cd4e620f.chunk.js",
+    "main.js.map": "/static/js/main.cd4e620f.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.728a6998.js",
     "runtime~main.js.map": "/static/js/runtime~main.728a6998.js.map",
     "static/css/2.621b5bde.chunk.css": "/static/css/2.621b5bde.chunk.css",
     "static/js/2.37a90892.chunk.js": "/static/js/2.37a90892.chunk.js",
     "static/js/2.37a90892.chunk.js.map": "/static/js/2.37a90892.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b17add76c366828946210eb62d9aa014.js": "/precache-manifest.b17add76c366828946210eb62d9aa014.js",
+    "precache-manifest.61207198ddf1d42d94a7a68d37f68011.js": "/precache-manifest.61207198ddf1d42d94a7a68d37f68011.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.621b5bde.chunk.css.map": "/static/css/2.621b5bde.chunk.css.map",
     "static/css/main.6464a498.chunk.css.map": "/static/css/main.6464a498.chunk.css.map",
@@ -20,7 +20,7 @@
     "static/media/github-square-brands.svg": "/static/media/github-square-brands.d1e7584b.svg",
     "static/media/linkedin-brands.svg": "/static/media/linkedin-brands.267e1bf2.svg",
     "static/media/pan.svg": "/static/media/pan.bb3844c1.svg",
-    "static/media/vivid-laptop.svg": "/static/media/vivid-laptop.c0b6a6d2.svg",
+    "static/media/vivid-laptop.svg": "/static/media/vivid-laptop.4b2f3b92.svg",
     "static/media/Summary.scss": "/static/media/wave-green.9bba884e.svg"
   }
 }
