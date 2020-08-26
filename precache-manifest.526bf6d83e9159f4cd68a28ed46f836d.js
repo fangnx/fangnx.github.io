@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d75b8b6468c4c2746662540179719328",
+    "revision": "60b6b1a9999cdf87ed903e08803c56b3",
     "url": "/index.html"
   },
   {
-    "revision": "43e8b9a802dcb9dea36f",
-    "url": "/static/css/2.621b5bde.chunk.css"
+    "revision": "91e7c08c40db1bfaa289",
+    "url": "/static/css/2.faaa52d3.chunk.css"
   },
   {
-    "revision": "cf27fc9a5b6b16223f18",
-    "url": "/static/css/main.bea5f0f4.chunk.css"
+    "revision": "5a974f743ade9484a06e",
+    "url": "/static/css/main.7687ee4b.chunk.css"
   },
   {
-    "revision": "43e8b9a802dcb9dea36f",
-    "url": "/static/js/2.37a90892.chunk.js"
+    "revision": "91e7c08c40db1bfaa289",
+    "url": "/static/js/2.39f1ab09.chunk.js"
   },
   {
-    "revision": "cf27fc9a5b6b16223f18",
-    "url": "/static/js/main.cd4e620f.chunk.js"
+    "revision": "5a974f743ade9484a06e",
+    "url": "/static/js/main.26694473.chunk.js"
   },
   {
     "revision": "554fd5738f1ea9dec1d7",
@@ -44,24 +44,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/brand-icons.e8c322de.woff2"
   },
   {
-    "revision": "95d491e93dad03ce1f87a7e5d4daf4c9",
-    "url": "/static/media/code-alt.95d491e9.svg"
-  },
-  {
-    "revision": "54aaf8a6d747903707d5c5c190048440",
-    "url": "/static/media/facebook-square-brands.54aaf8a6.svg"
-  },
-  {
-    "revision": "c99dd4ba133d54b2e763a6cf669ab5c9",
-    "url": "/static/media/file-code-regular.c99dd4ba.svg"
+    "revision": "eadbd7ffb0d3c5dd8b478e63ddea5fdd",
+    "url": "/static/media/ericsson-logo.eadbd7ff.svg"
   },
   {
     "revision": "9c74e172f87984c48ddf5c8108cabe67",
     "url": "/static/media/flags.9c74e172.png"
-  },
-  {
-    "revision": "d1e7584ba281453de06c1df4b984901d",
-    "url": "/static/media/github-square-brands.d1e7584b.svg"
   },
   {
     "revision": "0ab54153eeeca0ce03978cc463b257f7",
@@ -84,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/icons.faff9214.woff"
   },
   {
-    "revision": "267e1bf23b8077f0653180d8c3c18832",
-    "url": "/static/media/linkedin-brands.267e1bf2.svg"
+    "revision": "6c62c7af0607247f551c886f306cfacf",
+    "url": "/static/media/meitu-logo.6c62c7af.png"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
@@ -108,15 +96,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/outline-icons.ef60a4f6.woff"
   },
   {
-    "revision": "bb3844c1a11b183420a9c7b5a9ba1dbc",
-    "url": "/static/media/pan.bb3844c1.svg"
-  },
-  {
-    "revision": "4b2f3b920b4ad353981d2e7f04be0665",
-    "url": "/static/media/vivid-laptop.4b2f3b92.svg"
-  },
-  {
-    "revision": "9bba884e95cd06dab5f91d6e2de7d9b5",
-    "url": "/static/media/wave-green.9bba884e.svg"
+    "revision": "601292847af80f7eba3a48b4539d0a82",
+    "url": "/static/media/ubisoft-logo.60129284.svg"
   }
 ]);
