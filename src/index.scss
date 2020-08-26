@@ -4,12 +4,13 @@
 * @author nxxinf
 * @github https://github.com/fangnx
 * @created 2019-08-24 17:03:39
-* @last-modified 2019-10-02 09:37:30
+* @last-modified 2020-08-26 17:05:52
 */
 
 @import 'styles/variables.scss';
 
 body {
+  background: $black;
   display: flex;
   flex-direction: column;
   margin: 0;

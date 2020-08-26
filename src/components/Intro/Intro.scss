@@ -1,0 +1,59 @@
+@import 'src/styles/variables';
+
+.intro {
+  background: $black;
+  height: 100vh;
+  position: relative;
+
+  .content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 10%;
+    position: absolute;
+    top: 10vh;
+    width: 80%;
+
+    > .name {
+      font-family: $font-name;
+      font-size: 60px;
+      margin: 0 auto 40px auto;
+      letter-spacing: 0.1em;
+      line-height: 60px;
+      text-shadow: 5px 5px $indigo, 20px 20px $black;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color: $white;
+    }
+
+    > article {
+      color: white;
+      display: flex;
+      height: 25px;
+
+      a {
+        color: $white;
+      }
+
+      > span {
+        font-family: $font-code;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0 30px 0 30px;
+      }
+    }
+
+    > .info-cards {
+      height: calc(90vh - 180px);
+      margin: 50px 0 0 0;
+      overflow-y: scroll;
+      padding: 0 50px 0 50px;
+      width: 550px;
+
+      > div {
+        margin-right: -7.5px; // Compensate for the scrollbar width.
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@
 * @author nxxinf
 * @github https://github.com/fangnx
 * @created 2019-08-24 17:03:39
-* @last-modified 2019-09-26 18:10:41
+* @last-modified 2020-08-26 18:22:06
 */
 
 @import 'styles/variables.scss';
@@ -12,4 +12,49 @@
 .App {
   background: $black;
   filter: brightness(100%);
+
+  a {
+    color: $indigo;
+    font-weight: 600;
+  }
+
+  h3 {
+    background: linear-gradient(180deg, $white 70%, $indigo-lighter 70%);
+    display: inline;
+    font-size: 18px;
+    font-weight: 900;
+    padding-right: 15px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 7.5px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    &:hover,
+    &:active {
+      background: $indigo;
+    }
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .underlined {
+    color: black;
+    flex: 1;
+    line-height: 1.2;
+    text-decoration: none;
+    background-image: linear-gradient(to right, $indigo 0, $indigo 50%);
+    background-position: 0 15px;
+    background-size: 0 50%;
+    background-repeat: no-repeat;
+    transition: background 0.3s;
+
+    &:hover {
+      background-size: 100% 50%;
+    }
+  }
 }

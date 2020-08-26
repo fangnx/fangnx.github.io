@@ -1,60 +1,83 @@
-/**
- * Projects.jsx
- *
- * @author nxxinf
- * @github https://github.com/fangnx
- * @created 2019-09-17 12:26:17
- * @last-modified 2019-09-24 22:31:31
- */
-
 import React from 'react';
-import { Icon } from 'semantic-ui-react';
-import fileCode from '../../assets/file-code-regular.svg';
-import './Projects.scss';
+import ContentCard from '../ContentCard/ContentCard';
 
-const PROJECT_INFO = [
-  {
-    name: 'Smoretify',
-    link: 'https://github.com/fangnx/smoretify',
-    imageLink: 'https://github.com/fangnx/smoretify/raw/master/demo-image.jpg',
-    description:
-      'Web application that enhances the Spotify experience with real-time song lyrics.'
-  },
-  {
-    name: 'Reaction Forum',
-    link: 'https://github.com/fangnx/reaction-forum',
-    imageLink:
-      'https://github.com/fangnx/reaction-forum/raw/master/demo-image.jpg',
-    description:
-      'Discussion forum with support for Markdown & RSS subscriptions.'
-  },
-  {
-    name: 'Co-operator',
-    link: 'https://github.com/fangnx/co-operator',
-    imageLink:
-      'https://github.com/fangnx/co-operator/blob/master/demo-image.jpg?raw=true',
-    description: 'ECSE 321 class project: a student co-op management system.'
-  }
-];
+const CodeDailyProject = {
+  title: 'Code Daily',
+  description: 'Custom Stack Overflow dashboard',
+  logo:
+    'https://i.pinimg.com/originals/ae/8a/c2/ae8ac2fa217d23aadcc913989fcc34a2.png',
+  tags: ['Typescript', 'Angular', 'NestJS', 'MongoDB', 'TravisCI'],
+};
+
+const DailyArticlesProject = {
+  title: 'Daily Articles',
+  description: 'Alexa skill to fetch and read articles from Wikipedia',
+  logo:
+    'https://i.pinimg.com/originals/ae/8a/c2/ae8ac2fa217d23aadcc913989fcc34a2.png',
+  tags: ['Typescript', 'Node.js', 'Python', 'AWS Lambda'],
+};
+
+const SmoretifyProject = {
+  title: 'Smoretify',
+  description:
+    'Spotify web interface with real-time lyrics, artist wiki, and and integrated YouTube widget',
+  logo: 'https://github.com/fangnx/smoretify/raw/master/demo-image.jpg',
+  tags: ['Javascript', 'React', 'Express', 'PassportJS'],
+};
+
+const CooperatorProject = {
+  title: 'Co-operator',
+  description:
+    'McGill ECSE 321 course project: a student co-op management system',
+  logo:
+    'https://github.com/fangnx/co-operator/blob/master/demo-image.jpg?raw=true',
+  tags: ['Java', 'Spring Boot', 'Gradle', 'Travis CI'],
+};
+
+const ReactionForumProject = {
+  title: 'Reaction Forum',
+  description:
+    'Web discussion forum with support for Markdown & RSS subscriptions',
+  logo: 'https://github.com/fangnx/reaction-forum/raw/master/demo-image.jpg',
+  tags: ['Javascript', 'React', 'Express', 'MongoDB'],
+};
 
 const Projects = () => (
   <div className="projects">
-    <div className="mid-panel">
-      <div className="content">
-        {PROJECT_INFO.map(p => (
-          <div className="projectCard">
-            <img className="image" src={p.imageLink} alt="" />
-            <div className="name">{p.name}</div>
-            <span onClick={() => window.open(p.link)}>
-              {/* <Icon link name="linkify"></Icon> */}
-              <img className="inline-icon" src={fileCode} />
-            </span>
-            <div className="description">{p.description}</div>
-          </div>
-        ))}
-      </div>
-    </div>
-    <div className="right-panel"></div>
+    <ContentCard
+      title={CodeDailyProject.title}
+      content={CodeDailyProject.description}
+      imageSrc={CodeDailyProject.logo}
+      tags={CodeDailyProject.tags}
+    ></ContentCard>
+
+    <ContentCard
+      title={DailyArticlesProject.title}
+      content={DailyArticlesProject.description}
+      imageSrc={DailyArticlesProject.logo}
+      tags={DailyArticlesProject.tags}
+    ></ContentCard>
+
+    <ContentCard
+      title={SmoretifyProject.title}
+      content={SmoretifyProject.description}
+      imageSrc={SmoretifyProject.logo}
+      tags={SmoretifyProject.tags}
+    ></ContentCard>
+
+    <ContentCard
+      title={CooperatorProject.title}
+      content={CooperatorProject.description}
+      imageSrc={CooperatorProject.logo}
+      tags={CooperatorProject.tags}
+    ></ContentCard>
+
+    <ContentCard
+      title={ReactionForumProject.title}
+      content={ReactionForumProject.description}
+      imageSrc={ReactionForumProject.logo}
+      tags={ReactionForumProject.tags}
+    ></ContentCard>
   </div>
 );
 
